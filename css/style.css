@@ -1,0 +1,112 @@
+html {
+	font-family: 'Lato', serif;
+	font-size: 80%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+	html {
+		font-size: 120%;
+	}
+}
+
+/*
+@media all and (min-width: 400px) {
+	html {
+		font-size: 80%;
+	}
+}
+*/
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.main-header {
+	text-align: center;
+	background-color: #16210b;
+	color: white;
+	padding: 4em;
+}
+	.main-header h1 {
+		margin: 0;
+	}
+
+	.main-header h2 {
+		font-size: 1rem;
+		font-weight: normal;
+	}
+
+	/*
+	@media screen and (max-width: 400px){
+		.main-header {
+			background-color: olive;
+		}
+	}
+	*/
+
+.card {
+	position: relative;
+	height: 30vh;
+	width: 100%;
+	background-size: cover;
+	color: black;
+	padding: .4em;
+	font-family: 'Megrim', cursive;
+}
+
+/*
+	.card--valencia {
+		}
+
+	.card--mv {
+	}
+*/
+	.card__title {
+	margin: 0;
+	text-align: center;
+	font-size: 2rem;
+	color: black;
+	}
+
+	.card__date {
+		font-size: .7rem;
+		margin: 0;
+		text-align: center;
+	}
+
+	@media all and (min-width: 28em) {
+		.card {
+			background-position: center;
+		}
+	}
+
+	.card__info {
+		position: absolute;
+		bottom: .4em;
+		left: .4em;
+		text-align: center;
+	}
+
+	.card__image {
+		display: block;
+	}
+
+	.card__temp {
+		display: block;
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	.card__maxt::before {
+		content: "Max: "
+	}
+
+	.card__mint::before {
+		content: "Min: "
+	}
+
+	.loader {
+		text-align: center;
+		font-size: 3rem;
+		color: red;
+	}

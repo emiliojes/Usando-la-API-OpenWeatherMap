@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Platzi Weather</title>
+	<title>Weather</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
@@ -13,6 +13,11 @@
 	</header>
 	
 	<div class="loader">Geolocalizando tu posicion por favor espere...</div>
+
+	<form action="" class="search">
+		<input type="text" data-input="cityAdd" class="search__text" placeholder="Agregar una nueva ciudad">;
+		<input type="submit" data-button="add" class="search__btn btn" value="Añadir una nueva ciudad">
+	</form>
 
 	<main class="cards-group">
 		<template id="template--city">
